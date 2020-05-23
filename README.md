@@ -15,6 +15,7 @@ source .venv/bin/activate
 
 install development dependies in the requirements file
 ```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 

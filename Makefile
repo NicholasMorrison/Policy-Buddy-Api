@@ -9,3 +9,6 @@ clean:
 all: 
 	make clean
 	make lint
+
+run run.local:
+	python driver.py

@@ -30,8 +30,8 @@ class RequestValidator:
 
         body_rules = ruleset.get('body')
         query_rules = ruleset.get('query')
-        body = request.get_json()
-        query = request.args
+        body = request.get_json() or {}
+        query = request.args or {}
 
         if body_rules:
             status, reasons = _validate(body_rules, body)
